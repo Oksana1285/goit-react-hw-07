@@ -1,13 +1,14 @@
 import { BsPerson } from 'react-icons/bs';
-import { deleteContact } from '../../redux/contactsSlice';
-import { useDispatch } from 'react-redux';
 import { MdPhoneInTalk } from 'react-icons/md';
+import { deleteContact } from '../../redux/contactsOps';
+import { useDispatch } from 'react-redux';
 
 import css from './Contact.module.css';
 
 const Contact = ({ id, number, name }) => {
   const dispatch = useDispatch();
   const handleDelete = () => dispatch(deleteContact(id));
+
   return (
     <div className={css.contactContainer}>
       <div className={css.contactText}>

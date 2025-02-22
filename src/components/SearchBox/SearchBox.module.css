@@ -1,10 +1,15 @@
 .searchContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: auto;
   margin-bottom: 40px;
 }
 
 .searchLabel {
   display: block;
   margin-bottom: 10px;
+  text-align: start;
 }
 
 .searchInput {
